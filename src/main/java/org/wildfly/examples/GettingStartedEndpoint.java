@@ -32,7 +32,7 @@ public class GettingStartedEndpoint {
         ChatMemory memory = MessageWindowChatMemory.withMaxMessages(5);
 
         /*ChatLanguageModel model = MistralAiChatModel.builder()
-                .apiKey(System.getenv("MISTRAL_AI_API_KEY"))
+                .apiKey(System.getenv("MISTRAL_API_KEY"))
                 .modelName(MistralAiChatModelName.MISTRAL_SMALL_LATEST)
                 .temperature(0.1)
                 .logRequests(true)

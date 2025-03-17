@@ -17,12 +17,12 @@ public class MistralTest {
 		// https://docs.langchain4j.dev/integrations/language-models/mistral-ai/
 		// https://github.com/langchain4j/langchain4j/blob/main/langchain4j-mistral-ai/src/test/java/dev/langchain4j/model/mistralai/MistralAiChatModelIT.java
 
-		System.out.println("Hello, World! " + System.getenv("MISTRAL_AI_API_KEY"));
+		System.out.println("Hello, World! " + System.getenv("MISTRAL_API_KEY"));
 
 		ChatMemory memory = MessageWindowChatMemory.withMaxMessages(5);
 
 		ChatLanguageModel model = MistralAiChatModel.builder()
-				.apiKey(System.getenv("MISTRAL_AI_API_KEY"))
+				.apiKey(System.getenv("MISTRAL_API_KEY"))
 				.modelName(MistralAiChatModelName.MISTRAL_SMALL_LATEST)
 				.temperature(0.1)
 				.logRequests(true)
